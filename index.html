@@ -4,37 +4,30 @@
       <title>About Me</title>
    </head>
 	<!-- <link rel = "stylesheet" type = "text/css" href = "/html/style.css"> -->
-	
-      <style type = "text/css"> 
-         .red { 
-            color: red; 
-         } 
-         .thick{ 
-            font-size:20px; 
-         } 
-		 .superthick{
-		 font-size:50px;
-		 }
-         .green { 
-            color:green; 
-         } 
-		 .brown{
-		 color: brown
-		 }
-	</style>
 
+	<!----------------------------------------------------------------------------------------------------->
+	<style type = "text/css"> 
+        	.red 		{ color: red;  } 
+         	.thick		{ font-size:20px; } 
+		.superthick	{ font-size:50px; }
+         	.green 		{ color:green; } 
+		.brown		{ color: brown }
+	</style>
+	<!----------------------------------------------------------------------------------------------------->
 	<script>
 
-		var img = document.querySelector('img[name="changeCostume"]');
-		img.onclick = function() 
-			{
+		function changeImage()
+		{
+		    	var img = document.getElementById('changeCostume');
 			alert('I am here!');
-			if this.src = "HatRubberDuck.png" 
-				this.src = "FaceCry.png";
+			if img.src = "HatRubberDuck.png" 
+				img.src = "FaceCry.png";
 			else
-				this.src = "HatRubberDuck.png";
+				img.src = "HatRubberDuck.png";
 			};		
+		}
 	</script>
+	
    <body>
       <h1>About me</h1>
       <p class="superthick">
@@ -45,6 +38,7 @@
 		 <br>
 		 <a href="">Click to change costume<img name="changeCostume" src="./Assets/HatRubberDuck.png"></a>
 		 </p>
+	   <button onclick="changeImage()">Change Image</button> 
       </p>
    </body>
    
