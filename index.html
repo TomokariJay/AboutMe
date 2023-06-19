@@ -22,7 +22,19 @@
 		 color: brown
 		 }
 	</style>
-	
+
+	<script>
+
+		var img = document.querySelector('img[name="changeCostume"]');
+		img.onclick = function() 
+			{
+			alert('I am here!');
+			if this.src = "HatRubberDuck.png" 
+				this.src = "FaceCry.png";
+			else
+				this.src = "HatRubberDuck.png";
+			};		
+	</script>
    <body>
       <h1>About me</h1>
       <p class="superthick">
@@ -31,7 +43,7 @@
 		 But this is me when Roblox Gets an <a href="https://web.archive.org/web/20211002221636/https://sites.google.com/view/bobismad/">Outage</a>.
 		 and I also have a <a href="https://youtube.com/c/GreenPlaysNoah">youtube</a>
 		 <br>
-		 <a href="">Click to change costume<img src="./Assets/HatRubberDuck.png"></a>
+		 <a href="">Click to change costume<img name="changeCostume" src="./Assets/HatRubberDuck.png"></a>
 		 </p>
       </p>
    </body>
